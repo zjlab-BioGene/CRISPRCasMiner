@@ -58,8 +58,6 @@ apf.add_argument('--need_rank','-rank',default= 3,type=int,help='need rank.')
 apf.add_argument('--large_prolen','-large',default= 2000,type=int,help='large prolen.')
 apf.add_argument('--split_prolen_upper','-sup',default= 1500,type=int,help='split prolen upper.')
 apf.add_argument('--split_prolen_lower','-slow',default= 700,type=int,help='split prolen lower.')
-apf.add_argument('--out_prolen_max','-omax',default= 700,type=int,help='max length of output protein.')
-apf.add_argument('--out_prolen_min','-omin',default= 700,type=int,help='min length of output protein.')
 
 # Plot
 app = ap.add_argument_group('plotting arguments')
