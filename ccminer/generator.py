@@ -47,8 +47,6 @@ class Generator(object):
         self.large_prolen = args.large_prolen
         self.split_prolen_upper = args.split_prolen_upper
         self.split_prolen_lower = args.split_prolen_lower
-        self.out_prolen_max = args.out_prolen_max
-        self.out_prolen_min = args.out_prolen_min
 
         self.any_cas = False
         self.any_operon = False
