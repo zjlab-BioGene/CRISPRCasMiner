@@ -1,0 +1,2 @@
+drawSvg==1.9.0
+cctyper==1.8.0

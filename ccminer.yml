@@ -1,0 +1,17 @@
+name: ccminer
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pip
+  - bioconda::hmmer
+  - bioconda::minced
+  - bioconda::prodigal
+  - bioconda::bioawk
+  - bioconda::mafft
+  - bioconda::viennarna
+  - bioconda::seqkit
+  - bioconda::seqtk
+  - webencodings=0.5.1
