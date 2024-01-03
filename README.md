@@ -1,5 +1,5 @@
-# CRISPRCasMiner v1.5.0
-A CRISPR-Cas systems mining pipeline.[Colab_Notebook](https://colab.research.google.com/drive/1N8Vq9gfO1Wwzm0UAsa8YwegyjrV5QrFQ?usp=sharing)
+# CRISPRCasMiner v.1.5.0
+A CRISPR-Cas systems mining pipeline.[Colab_Notebook](https://colab.research.google.com/drive/1PYo_vFefUnPWgFLQ5q3Oxu2pTtx9BvzY?usp=sharing)
 
 `Input`: Metagenome-assembled genomes/contigs.
 
@@ -57,7 +57,8 @@ conda install -c bioconda seqtk -y
 
 ## Run
 
-1. Run cctyper and prodigal.
+1. Run `cctyper` and `prodigal`.
+First, run 
 ```shell
 cd CRISPRCasMiner && rm -rf output && mkdir output
 cctyper example/input_test.fna output/01_cctyper \
@@ -97,8 +98,9 @@ Finally, have a look at the proteins:
 ```shell
 cat output/suspicious.faa
 ```
+---------------------------------------------------------------
 
-## **Note**
+## *Note*
 
 Two bioinformatics pipelines were executed on your metagenome-assembled data:
 
