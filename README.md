@@ -58,20 +58,22 @@ conda install -c bioconda seqtk -y
 ## Run
 
 1. Run `cctyper` and `prodigal`.
-First, run 
+First, run `cctyper`:
 ```shell
 cd CRISPRCasMiner && rm -rf output && mkdir output
 cctyper example/input_test.fna output/01_cctyper \
     --db data \
     --prodigal meta \
     --keep_tmp
+```
+Then, run `prodigal`:
+```shell
 prodigal -i example/input_test.fna -d output/01_cctyper/genes.cds -p meta > /dev/null
-rm -rf output/01_cctyper/hmmer output/01_cctyper/spacers output/01_cctyper/*.log output/01_cctyper/Flank*
 ```
 
 2. Run ccminer.
 
-See parameters of ccminer, run:
+See parameters of ccminer:
 ```shell
 python ccminer/ccminer.py 
 ```
@@ -79,7 +81,7 @@ or
 ```shell
 python ccminer/ccminer.py -h
 ```
-Run ccminer:
+Then, run ccminer:
 ```shell
 python ccminer/ccminer.py example/input_test.fna output/02_ccminer \
     --cctyper_path output/01_cctyper \
