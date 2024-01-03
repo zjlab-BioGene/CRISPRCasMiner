@@ -145,7 +145,7 @@ class RNAfold(object):
     
     def __init__(self,out,seq):
         self.seq = str(seq).strip()
-        self.out = out
+        self.out = os.path.abspath(out) # Modified by Wenhui.Li, 2024.01.03
     
     def runRNAfold(self):
         self.run_rnafold()

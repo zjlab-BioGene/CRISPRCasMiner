@@ -164,7 +164,13 @@ class NearCRISPR(object):
             return ann
                     
         ## Fetch HMM annotation
-        hmm = pd.read_csv(allhmm,sep='\t',header=0)
+        # Modified by Wenhui.Li, 2024.01.03
+        tmp = pd.read_csv(allhmm,sep='\t')
+        if tmp.shape[0] == 0:
+            hmm = pd.DataFrame(columns=['Hmm','Protein','tlen','qlen','Eval','score',
+                            'start','end','Acc','Pos','Cov_seq','Cov_hmm','strand'])
+        else:
+            hmm = tmp
         # runze.cai修改于2023.6.28
         hmm.rename(columns={'ORF':'Protein'},inplace=True)
         hmm['HMM'] = [x.split('_')[0] for x in hmm['Hmm']]
