@@ -5,14 +5,6 @@ A CRISPR-Cas systems mining pipeline.[Colab_Notebook](https://colab.research.goo
 
 `Output`: Known CRISPR-Cas systems & suspicious proteins adjacent to CRISPR arrays.
 
-## Authors
-
-| Author | Email |
-| ------ | ----- |
-| Wenhui Li | liwh@zhejianglab.com, liwh@tongji.edu.cn |
-| Runze Cai | cairz@zhejianglab.com |
-| Wuke Wang | wangwk@zhejianglab.com |
-
 ## Installation
 
 1. download CRISPRCasMiner from github
@@ -150,3 +142,7 @@ If no known CRISPR-Cas systems were identified by cctyper, then pay your attenti
   - `primary`: this protein falls under the 'other' category and has a size over 700 amino acids, indicating its potential to be a suspicious novel Cas protein.
 - `pro_seq`. Amino acid sequence of the protein.
 - `gene_seq`. CDS of the protein.
+
+## Contacts
+
+qiliu@tongji.edu.cn, liwh@zhejianglab.com, liwh@tongji.edu.cn
