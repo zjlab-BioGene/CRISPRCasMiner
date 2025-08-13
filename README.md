@@ -143,6 +143,14 @@ If no known CRISPR-Cas systems were identified by cctyper, then pay your attenti
 - `pro_seq`. Amino acid sequence of the protein.
 - `gene_seq`. CDS of the protein.
 
+## Citation
+
+Li, Wenhui, Xianyue Jiang, Wuke Wang, Liya Hou, Runze Cai, Yongqian Li, Qiuxi Gu et al. "Discovering CRISPR-Cas system with self-processing pre-crRNA capability by foundation models." Nature Communications 15, no. 1 (2024): 10024.
+
+DOI: https://doi.org/10.1038/s41467-024-54365-0
+
+PMCID: PMC11576732
+
 ## Contacts
 
-qiliu@tongji.edu.cn, liwh@zhejianglab.com, liwh@tongji.edu.cn
+liwh@zhejianglab.org, liwh@tongji.edu.cn
